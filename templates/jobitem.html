@@ -1,9 +1,21 @@
-<div>
-	<h3>
-		{{job['title']}}
-		{% if 'salary' in job %}
-			<span class="salary">/ {{job['salary']}}</span>
-		{% endif %}
-	</h3>
-	<h4>{{job['location']}}</h4>
+<div class="job-item">
+	<div class="job-col__left">
+		<h3>
+			{{job['title']}}
+			{% if 'salary' in job %}
+				<span class="salary">/ {{job['salary']}}</span>
+			{% endif %}
+		</h3>
+		<h4>{{job['location']}}</h4>
+	</div>
+	<div class="job-col__right">
+		<button class="apply-button">
+			<a 
+				href="#" 
+				title="Apply" 
+				aria-label="Apply Link">
+				Apply
+			</a>
+		</button>
+	</div>
 </div>
