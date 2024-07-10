@@ -1,0 +1,62 @@
+<style>
+	.nav-wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem 1rem;
+		align-items: center;
+		background-color: #efefef;
+
+		& .nav-items {
+			display: flex;
+			flex-direction: row;
+			gap: 1rem;
+			list-style-type: none;
+
+			& li a {
+				text-decoration: none;
+			}
+		}
+	}
+</style>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#" class="brand-logo">Python + Flask</a>
+		<div class="nav-wrap__items">
+			<ul class="nav-items">
+				<li class="nav-item">
+					<a 
+						href="/" 
+						title="Nav Link" 
+						aria-label="Nav Link">
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a 
+						href="/about" 
+						title="Nav Link" 
+						aria-label="Nav Link">
+						About
+					</a>
+				</li>
+				<li class="nav-item">
+					<a 
+						href="/blog" 
+						title="Nav Link" 
+						aria-label="Nav Link">
+						Blog
+					</a>
+				</li>
+				<li class="nav-item">
+					<a 
+						href="/contact" 
+						title="Nav Link" 
+						aria-label="Nav Link">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
